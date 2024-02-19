@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>入力画面</title>
+</head>
+
+<body>
+	<h1>Practice</h1>
+	<form action="output.html" th:action="@{output}">
+		<p> IDを入れてください(3桁の半角数字)</p>
+		<input type="text" name="number">
+		<input type="submit" value="送信">
+	</form>
+</body>
+
+</html>

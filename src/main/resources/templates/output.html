@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>結果画面</title>
+</head>
+
+<body>
+	<h1>Practice</h1>
+	<p> ID：<span th:text="${number}">100</span></p>
+	<p>名前：<span th:text="${name}">山田太郎</span></p>
+	<a href="index.html" th:href="@{input}">入力画面へ</a>
+</body>
+
+</html>
