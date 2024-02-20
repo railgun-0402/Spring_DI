@@ -18,7 +18,10 @@ public class ShainController {
 		if (bindingResult.hasErrors()) {
 			return "index.html";
 		}
-		String name = "コントローラー太郎";
+		
+		// サービス層から社員を検索する
+		ShainService shainServece = new ShainServiceImpl();
+		String name = shainServece.findByNo(shainForm.getNumber());
 		model.addAttribute("number", shainForm.getNumber());
 		model.addAttribute("name", name);
 		return "output.html";
