@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ShainController {
+	
 	@RequestMapping("/input")
 	public String index(ShainForm shainForm) {
 		return "index.html";
